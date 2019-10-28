@@ -1,3 +1,9 @@
+import requests
+
+test_pre = requests.get('https://data.nasa.gov/resource/gh4g-9sfh.json')
+
+test = test_pre.json()
+
 import math
 
 def calc_dist(lat1, lon1, lat2, lon2):
@@ -11,7 +17,7 @@ def calc_dist(lat1, lon1, lat2, lon2):
       math.cos(lat2) * \
       math.sin( (lon2 - lon1) / 2 ) ** 2
 
-    return 6372.8 * 2 * math.asin(math.sqrt(h)
+    return 6372.8 * 2 * math.asin(math.sqrt(h))
 
 for item in test:
     try:
@@ -26,4 +32,4 @@ for item in test:
     except:
         pass
 
-)
+
