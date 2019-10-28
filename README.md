@@ -13,6 +13,6 @@ pipenv install
 and then run the code using pipenv:
 
 ```
-pipenv find-meteorites-within-200-miles.py
+pipenv meteors/find-meteorites-within-200-miles.py
 
 ```
